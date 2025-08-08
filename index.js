@@ -140,7 +140,7 @@ async function connectToWA() {
         
         //____STATUS AUTO REACT_____ 
         const mnyako = await jidNormalizedUser(malvin.user.id);
-        const treact = "🫡"; // The reaction to add
+        const treact = "❤️"; // The reaction to add
         await malvin.sendMessage(mek.key.remoteJid, {
           react: { key: mek.key, text: treact },
         }, { statusJidList: [mek.key.participant, mnyako] });
