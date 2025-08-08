@@ -1,43 +1,39 @@
-const { cmd } = require("../command");
-const fetch = require("node-fetch");
+const config = require('../config');
+const { cmd, commands } = require('../command');
+const axios = require('axios');
 
-cmd(
-  {
-    pattern: "fb",
-    react: "📘",
-    desc: "Download Facebook video",
-    category: "download",
-    filename: __filename,
-  },
-  async (malvin, mek, m, { from, args, reply }) => {
-    const url = args[0];
-    if (!url || !url.includes("facebook.com"))
-      return reply("❌ *Please provide a valid Facebook video link.*");
-
-    try {
-      reply("🔎 Fetching Facebook video...");
-
-      const api = `https://api.radiaa.repl.co/api/fb?url=${encodeURIComponent(url)}`;
-      const response = await fetch(api);
-      if (!response.ok) throw new Error("API request failed");
-
-      const data = await response.json();
-      const { hd, sd, title } = data.result;
-      if (!hd && !sd) return reply("❌ Video not found or not public.");
-
-      const videoUrl = hd || sd;
-
-      await malvin.sendMessage(
-        from,
-        {
-          video: { url: videoUrl },
-          caption: `📘 *${title || "Facebook Video"}*\n\n_*𝐍𝐄𝐎𝐍 𝐗𝐌𝐃 𝐅𝐀𝐂𝐄𝐁𝐎𝐎𝐊 𝐃𝐖𝐎𝐍𝐋𝐎𝐃𝐄𝐑💪🤟*_`,
-        },
-        { quoted: mek }
-      );
-    } catch (e) {
-      console.error(e);
-      reply(`❌ *Failed to download:* ${e.message}`);
+cmd({
+  pattern: 'fb',
+  alias: ['fbdl', 'facebook'],
+  desc: 'Download Facebook videos and reels by providing the video URL.',
+  category: 'utility',
+  use: '.fbdl <facebook_url>',
+  filename: __filename,
+}, async (conn, mek, msg, { from, args, reply }) => {
+  try {
+    const fbUrl = args.join(" ");
+    if (!fbUrl) {
+      return reply('*𝐏ℓєαʂє 𝐏ɼ๏νιɖє 𝐀 fb҇ 𝐕ιɖє๏ ๏ɼ ɼєєℓ 𝐔ɼℓ..*');
     }
+
+    // Fetch video download links from the API
+    const apiKey = 'e276311658d835109c'; // Replace with your API key if required
+    const apiUrl = `https://api.nexoracle.com/downloader/facebook?apikey=${apiKey}&url=${encodeURIComponent(fbUrl)}`;
+    const response = await axios.get(apiUrl);
+
+    if (!response.data || !response.data.result || !response.data.result.sd) {
+      return reply('*𝐏ℓєαʂє 𝐏ɼ๏νιɖє 𝐀 fb҇ 𝐕ιɖє๏ ๏ɼ ɼєєℓ 𝐔ɼℓ..*');
+    }
+
+    const { thumb, title, desc, sd } = response.data.result;
+
+    // Send the video as an attachment
+    await conn.sendMessage(from, {
+      video: { url: sd }, // Attach the video
+      caption: `*❒ FB VIDEO DL❒*\n\n🔖 *Title*: ${title}\n📑 *Description*: ${desc}\n🖇️ *Url*: ${fbUrl}`,
+    });
+  } catch (error) {
+    console.error('Error downloading Facebook video:', error);
+    reply('❌ Unable to download the Facebook video. Please try again later.');
   }
-);
+});
