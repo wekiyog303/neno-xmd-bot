@@ -34,46 +34,40 @@ Bring automation, entertainment, and unique features to your chats! ✨🤖
 
 ## Deployment Methods
 
-1. **Get [`SESSION ID`](https://suhail-md-vtsf.onrender.com/) by Pair Code or Scanning QR code**  
+1. **Get [`SESSION ID`](https://malvinxd-pairsession.onrender.com/) by Pair Code or Scanning QR code**  
    WhatsApp → Three dots → Linked Devices
 
-2. **Get a MongoDB URI** → [MongoDB Website](https://www.mongodb.com/) | [Tutorial](https://youtu.be/4YEUtGlqkl4)
 
-3. **Star ⭐ this repository** & Click [FORK](https://github.com/Nimeshkamihiran/neno-xmd-bot/fork)
+2. **Star ⭐ this repository** & Click [FORK](https://github.com/Nimeshkamihiran/neno-xmd-bot/fork)
 
 ---
 
-### 4. Deploy on Heroku
+### 3. Deploy on Heroku
 [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=new)
 
 ---
 
-### 5. Deploy on Replit
+### 4. Deploy on Replit
 <a href='https://repl.it/github/Nimeshkamihiran/neno-xmd-bot' target="_blank"><img alt='DEPLOY' src='https://img.shields.io/badge/-REPLIT-orange?style=for-the-badge&logo=replit&logoColor=white'/></a>
 
 ---
 
-### 6. Deploy on Koyeb
+### 5. Deploy on Koyeb
 <a href='https://app.koyeb.com/auth/signin' target="_blank"><img alt='DEPLOY' src='https://img.shields.io/badge/-KOYEB-blue?style=for-the-badge&logo=koyeb&logoColor=white'/></a>
 
 ---
 
-### 7. Deploy on Glitch
-<a href='https://glitch.com/signup' target="_blank"><img alt='DEPLOY' src='https://img.shields.io/badge/GLITCH-h?color=pink&style=for-the-badge&logo=glitch'/></a>
-
----
-
-### 8. Deploy on Codespace
+### 6. Deploy on Codespace
 <a href='https://github.com/codespaces/new' target="_blank"><img alt='DEPLOY' src='https://img.shields.io/badge/CODESPACE-h?color=navy&style=for-the-badge&logo=visualstudiocode'/></a>
 
 ---
 
-### 9. Deploy on Render
+### 7. Deploy on Render
 <a href='https://dashboard.render.com' target="_blank"><img alt='DEPLOY' src='https://img.shields.io/badge/RENDER-h?color=maroon&style=for-the-badge&logo=render'/></a>
 
 ---
 
-### 10. Deploy on Railway
+### 8. Deploy on Railway
 <a href='https://railway.app/new' target="_blank"><img alt='DEPLOY' src='https://img.shields.io/badge/RAILWAY-h?color=black&style=for-the-badge&logo=railway'/></a>
 
 ---
