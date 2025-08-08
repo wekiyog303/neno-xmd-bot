@@ -47,35 +47,36 @@ cmd(
 ╭─「 🛠️ ꜱᴛᴀᴛᴜꜱ ᴅᴇᴛᴀɪʟꜱ 」 
 │🤖 *Bot*: 𝗡𝗘𝗢𝗡 𝗫𝗠𝗗
 │🙋‍♂️ *User*: ${user}
-│📱 *Owner*: ${owner}
+│📱 *Owner*: NIMESHKA MIHIRAN
 │⏳ *Uptime*: ${uptime}
 │💾 *Ram*: ${usedRam} / ${totalRam}
 │🛎️ *Prefix*: ${config.PREFIX}
 ╰──────────●●►
 
-╭─「 📜 ᴍᴇɴᴜ ᴏᴘᴛɪᴏɴꜱ 」 
+╭─「 📜 ᴍᴇɴᴜ ᴏᴘᴛɪᴏɴꜱ 」 →→
 │ ⚙️ *MAIN COMMANDS*
 │   ➥ .alive 
 │   ➥ .menu 
 │   ➥ .ai <text> 
-│   ➥ .system 
-│   ➥ .owner 
-│
-│ 📥 *DOWNLOAD COMMANDS*
+│  ╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌
+│ 📥 *DOWNLOAD COMMANDS*→→
 │   ➥ .song <text> 
 │   ➥ .video <text> 
 │   ➥ .fb <link> 
-│
+    ➥ .tiktok <link>
+│╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌
 │ 👑 *OWNER COMMANDS*
 │   ➥ .restart 
 │   ➥ .update 
-│
+│╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌
 │ 🔁 *CONVERT COMMANDS*
 │   ➥ .sticker <reply img> 
 │   ➥ .img <reply sticker> 
 │   ➥ .tr <lang> <text>
 │   ➥ .tts <text> 
 ╰──────────●●►
+
+▯𝙶𝙸𝚅𝙴 𝚈𝙾𝚄𝙴𝚁 𝚂𝚄𝙿 →→https://whatsapp.com/channel/0029Vb6BQQmFnSz7bmxefu40▯
 
 > *POWERED BY 𝗡𝗜𝗠𝗘𝗦𝗛𝗞𝗔 𝗠𝗜𝗛𝗜𝗥𝗔𝗡*
 `;
