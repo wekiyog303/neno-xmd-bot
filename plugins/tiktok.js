@@ -1,34 +1,44 @@
 const { cmd } = require("../command");
-const axios = require("axios");
+const fetch = require("node-fetch");
 
+// TikTok Video Downloader
 cmd(
   {
-    pattern: "tt",
+    pattern: "tiktok",
     react: "🎵",
-    desc: "Download TikTok Video",
+    desc: "Download TikTok video",
     category: "download",
     filename: __filename,
   },
-  async (malvin, mek, m, { from, q, reply }) => {
+  async (malvin, mek, m, { from, args, reply }) => {
+    const url = args[0];
+    if (!url || !url.includes("tiktok.com"))
+      return reply("❌ *Please provide a valid TikTok video link.*");
+
     try {
-      if (!q || !q.includes("tiktok.com"))
-        return reply("❌ Please provide a valid TikTok link.");
+      reply("🔎 Fetching TikTok video...");
 
-      const { data } = await axios.get(`https://api-dylux.vercel.app/api/tiktok?url=${q}`);
+      // Example API (you can change if needed)
+      const api = `https://api.radiaa.repl.co/api/tiktok?url=${encodeURIComponent(url)}`;
+      const response = await fetch(api);
+      if (!response.ok) throw new Error("API request failed");
 
-      if (!data || !data.video) return reply("❌ Failed to fetch TikTok video.");
+      const data = await response.json();
+      const { video, title } = data.result || {};
+
+      if (!video) return reply("❌ Video not found or removed.");
 
       await malvin.sendMessage(
-  from,
-  {
-    video: { url: data.video },
-    caption: `*_𝙉𝙀𝙊𝙉 𝙓𝙈𝘿 TIK TOK DOWNLOADER_* 🎥\n\n👤 Author: ${data.author}`,
-  },
-  { quoted: mek }
-);
+        from,
+        {
+          video: { url: video },
+          caption: `🎵 *${title || "TikTok Video"}*\n\n_*𝐍𝐄𝐎𝐍 𝐗𝐌𝐃 𝐓𝐈𝐊𝐓𝐎𝐊 𝐃𝐖𝐎𝐍𝐋𝐎𝐃𝐄𝐑🔥🎶*_`,
+        },
+        { quoted: mek }
+      );
     } catch (e) {
       console.error(e);
-      reply("❌ Error: " + e.message);
+      reply(`❌ *Failed to download:* ${e.message}`);
     }
   }
 );
