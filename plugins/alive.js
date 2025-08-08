@@ -46,7 +46,7 @@ cmd(
         from,
         {
           audio: {
-            url: "https://files.catbox.moe/wz8rh7.mp3",
+            url: "https://files.catbox.moe/ohzu6j.mp3",
           },
           mimetype: "audio/mpeg",
           ptt: true,
