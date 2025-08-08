@@ -92,8 +92,34 @@ async function connectToWA() {
     console.log(" installed successful ✅");
     console.log(" connected to whatsapp ✅");
 
-    let up = `𝐍𝐄𝐍𝐎 𝐗 𝐌𝐃 connected successful ✅`;
-    let up1 = `𝐇𝐄𝐋𝐋𝐎 𝐍𝐈𝐌𝐄𝐒𝐇𝐊𝐀 𝐌𝐈𝐇𝐈𝐑𝐀𝐍 🪀, I made bot successful`;
+    let up = `
+╔════════════════════════════╗
+   🚀  𝐍𝐄𝐍𝐎 𝐗 𝐌𝐃 - CONNECTION STATUS  
+╚════════════════════════════╝
+
+✦ Online Status     : ✅ CONNECTED SUCCESSFULLY  
+✦ System Mode       : FULLY OPERATIONAL ⚡  
+✦ Modules Loaded    : ✔ NO ERRORS FOUND  
+✦ Security Protocol : 🔒 ACTIVE & STABLE  
+✦ AI Engine         : 🤖 READY TO EXECUTE COMMANDS  
+✦ Speed             : ⚡ INSTANT RESPONSE  
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+`;
+
+let up1 = `
+╔════════════════════════════╗
+   🪀  WELCOME - 𝐍𝐈𝐌𝐄𝐒𝐇𝐊𝐀 𝐌𝐈𝐇𝐈𝐑𝐀𝐍  
+╚════════════════════════════╝
+
+✦ Bot Creation     : 🎯 SUCCESSFUL  
+✦ Current Status   : 🔹 COMMAND MODE READY  
+✦ Assistance Level : 🛡 ALWAYS ACTIVE  
+✦ Mission          : ✨ MAKE YOUR TASKS EASY & POWERFUL  
+✦ Motto            : 🚀 PERFORM • PROTECT • DOMINATE  
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+`;
 
     malvin.sendMessage(ownerNumber + "@s.whatsapp.net", {
       image: {
