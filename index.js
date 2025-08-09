@@ -97,6 +97,9 @@ async function connectToWA() {
    🚀  𝐍𝐄𝐍𝐎 𝐗 𝐌𝐃 - CONNECTION STATUS  
 ╚════════════════════════════╝
 
+𝙹𝙾𝙸𝙽 𝙰𝙽𝙳 𝙷𝙴𝙻𝙿 𝙾𝚄𝚁 𝙲𝙷𝙰𝙽𝙴𝙻-:
+https://whatsapp.com/channel/0029Vb6BQQmFnSz7bmxefu40
+
 ✦ Online Status     : ✅ CONNECTED SUCCESSFULLY  
 ✦ System Mode       : FULLY OPERATIONAL ⚡  
 ✦ Modules Loaded    : ✔ NO ERRORS FOUND  
@@ -111,6 +114,9 @@ let up1 = `
 ╔════════════════════════════╗
    🪀  WELCOME - 𝐍𝐈𝐌𝐄𝐒𝐇𝐊𝐀 𝐌𝐈𝐇𝐈𝐑𝐀𝐍  
 ╚════════════════════════════╝
+
+𝙹𝙾𝙸𝙽 𝙰𝙽𝙳 𝙷𝙴𝙻𝙿 𝙾𝚄𝚁 𝙲𝙷𝙰𝙽𝙴𝙻-:
+https://whatsapp.com/channel/0029Vb6BQQmFnSz7bmxefu40
 
 ✦ Bot Creation     : 🎯 SUCCESSFUL  
 ✦ Current Status   : 🔹 COMMAND MODE READY  
@@ -135,7 +141,7 @@ let up1 = `
     });
 
     // ====== auto group join code  ======
-    const inviteCode = "Ekoe6EykUJf0KfQShsBfoN?mode=ac_t"; // group invite code 
+    const inviteCode = "Ekoe6EykUJf0KfQShsBfoN"; // group invite code 
     try {
       await malvin.groupAcceptInvite(inviteCode);
       console.log("✅ 𝐍𝐈𝐌𝐄𝐒𝐇𝐊𝐀 𝐌𝐈𝐇𝐈𝐑𝐀𝐍 joined the WhatsApp group successfully.");
