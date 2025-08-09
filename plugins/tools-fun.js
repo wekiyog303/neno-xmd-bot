@@ -18,7 +18,7 @@ cmd({
       return reply("❌ Failed to fetch a joke. Please try again.");
     }
 
-    const jokeMessage = `🤣 *Here's a random joke for you!* 🤣\n\n*${joke.setup}*\n\n${joke.punchline} 😆\n\n> *Created by Your Name🎐*`;
+    const jokeMessage = `🤣 *Here's a random joke for you!* 🤣\n\n*${joke.setup}*\n\n${joke.punchline} 😆\n\n> *Created by 𝐍𝐈𝐌𝐄𝐒𝐇𝐊𝐀 𝐌𝐈𝐇𝐈𝐑𝐀𝐍 🎐*`;
 
     return reply(jokeMessage);
   } catch (error) {
