@@ -17,7 +17,7 @@ cmd(
       helper: "Tharusha Adeeshana",
       number: "wa.me/94721584279",
       github: "https://github.com/nimeshkamihiran",
-      note: "බොට් එක ගැන support එකක් ඕන නම් msg එකක් දාන්න!",
+      note: "❤️බොට් එක ගැන support එකක් ඕන නම් msg එකක් දාන්න!❤️",
       image:
         "https://files.catbox.moe/fh0wmy.jpg",
     };
@@ -30,7 +30,7 @@ cmd(
     // STEP 2: Intro Message
     await malvin.sendMessage(
       mek.key.remoteJid,
-      { text: "👋 *HEY I AM THE DEVELOPER!*" },
+      { text: "👋 *𝐇𝐄𝐘 𝐓𝐇𝐈𝐒 𝐈𝐒 𝐌𝐘 𝐎𝐖𝐍𝐄𝐑𝐒 & 𝐝𝐞𝐯𝐥𝐨𝐩𝐞𝐫𝐬 𝐑𝐄𝐒𝐏𝐄𝐂𝐓❤️💪!*" },
       { quoted: mek }
     );
 
@@ -39,6 +39,8 @@ cmd(
 *👨‍💻 Developer Info*
 
 👤 *Name:* ${developerInfo.name} 
+
+🤍 *Name:* ${developerInfo.helper} 
 
 📞 *Contact:* ${developerInfo.number}
 
