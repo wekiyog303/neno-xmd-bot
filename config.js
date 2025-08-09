@@ -12,6 +12,7 @@ module.exports = {
   PREFIX: process.env.PREFIX || ".",
   AUTO_READ_STATUS: process.env.AUTO_READ_STATUS || "true",
   AUTO_REACT_STATUS: process.env.AUTO_REACT_STATUS || "true",
+  MENU_IMG: process.env.MENU_IMG || "https://files.catbox.moe/43e40k.jpg",
   MODE : process.env.MODE || "public", 
   AUTO_STATUS_LIKE: process.env.AUTO_STATUS_LIKE || "true", 
   AUTO_RECORDING: convertToBool(process.env.AUTO_RECORDING || "true"), 
