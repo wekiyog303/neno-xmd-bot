@@ -14,6 +14,7 @@ cmd(
   async (malvin, mek, m, { reply }) => {
     const developerInfo = {
       name: "Nimeshka Mihiran",
+      helper: "Tharusha Adeeshana",
       number: "wa.me/94721584279",
       github: "https://github.com/nimeshkamihiran",
       note: "බොට් එක ගැන support එකක් ඕන නම් msg එකක් දාන්න!",
