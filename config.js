@@ -16,5 +16,6 @@ module.exports = {
   MODE : process.env.MODE || "public", 
   AUTO_STATUS_LIKE: process.env.AUTO_STATUS_LIKE || "true", 
   AUTO_RECORDING: convertToBool(process.env.AUTO_RECORDING || "true"), 
+  AUTO_CHAT: true,
   ANTI_DELETE: convertToBool(process.env.ANTI_DELETE || "true"),
 };
