@@ -170,18 +170,56 @@ https://whatsapp.com/channel/0029Vb6BQQmFnSz7bmxefu40
       try {
         await malvin.readMessages([mek.key]);
         
-        //____STATUS AUTO REACT_____ 
-        const mnyako = await jidNormalizedUser(malvin.user.id);
-        const treact = "❤️"; // The reaction to add
-        await malvin.sendMessage(mek.key.remoteJid, {
-          react: { key: mek.key, text: treact },
-        }, { statusJidList: [mek.key.participant, mnyako] });
+        // index.js (ගොනුවේ උදාහරණ සඳහා)
+/* Assumes you have already created and exported your Baileys client as `malvin`
+   and that this file runs after the client is initialized and logged in.
+*/
 
-        console.log("📖 Status message marked as read and reacted to");
-      } catch (err) {
-        console.error("❌ Failed to mark status as read:", err);
+const { isJidStatusBroadcast } = require("@whiskeysockets/baileys");
+
+// register event once (or wherever you initialise handlers)
+malvin.ev.on("messages.upsert", async ({ messages }) => {
+  for (const mek of messages) {
+    try {
+      // only process messages that actually exist
+      if (!mek || !mek.message || !mek.key) continue;
+
+      // check if this is a status/story update
+      if (!isJidStatusBroadcast(mek.key.remoteJid)) continue;
+
+      // choose reaction (fixed or random)
+      const treact = "❤️";
+      // const emojis = ["🔥","😍","😂","😎","❤️","👍"]; const treact = emojis[Math.floor(Math.random()*emojis.length)];
+
+      // Send reaction to the status
+      await malvin.sendMessage(mek.key.remoteJid, {
+        react: { text: treact, key: mek.key }
+      });
+
+      // Try to mark status as read (best-effort — API varies between Baileys versions)
+      try {
+        // Many Baileys builds expose sendReadReceipt(jid, participant, messageIds)
+        if (typeof malvin.sendReadReceipt === "function") {
+          const participant = mek.key.participant || undefined; // participant exists for some keys
+          // sendReadReceipt expects (jid, participant, messageIds) in many versions
+          await malvin.sendReadReceipt(mek.key.remoteJid, participant, [mek.key.id || mek.key]);
+        } else if (typeof malvin.readMessages === "function") {
+          // fallback for some older/custom clients
+          await malvin.readMessages([mek.key]);
+        } else {
+          // if no dedicated API, ignore silently (reaction is the main thing)
+        }
+      } catch (e) {
+        // non-fatal — just log and continue
+        console.warn("⚠️ Could not send read receipt (not supported or failed):", e?.message || e);
       }
+
+      console.log(`✅ Auto-reacted to status with ${treact} (from ${mek.key.participant || "unknown"})`);
+    } catch (err) {
+      console.error("❌ Error handling status auto-react:", err);
     }
+  }
+});
 
     // Auto-recording feature check
     if (config.AUTO_RECORDING) {
