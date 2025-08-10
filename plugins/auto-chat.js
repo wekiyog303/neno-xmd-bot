@@ -1,7 +1,7 @@
 // plugins/autochat.js
 const config = require("../config");
 
-let autoChatCount = 0; // Reply limit
+let autoChatCount = 1; // Reply limit
 
 const autoReplies = {
   hello: [
