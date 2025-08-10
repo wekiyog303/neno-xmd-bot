@@ -85,7 +85,7 @@ cmd(
         from,
         {
           image: {
-            url: "https://files.catbox.moe/43e40k.jpg",
+            url: "https://files.catbox.moe/9use7n.jpg",
           },
           caption: madeMenu,
         },
