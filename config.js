@@ -18,4 +18,5 @@ module.exports = {
   AUTO_RECORDING: convertToBool(process.env.AUTO_RECORDING || "true"), 
   AUTO_CHAT: true,
   ANTI_DELETE: convertToBool(process.env.ANTI_DELETE || "true"),
+  ANTI_BAD: process.env.ANTI_BAD || "true",
 };
