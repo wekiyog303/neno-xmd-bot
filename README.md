@@ -25,7 +25,8 @@
 <p align="center">
 Meet <b>NENO XMD BOT</b>, your all-in-one WhatsApp AI Buddy!  
 Super fast, full-featured, and designed for fun + productivity.  
-Bring automation, entertainment, and unique features to your chats! ✨🤖
+Bring automation, entertainment, and unique features to your chats!
+               𝗕𝗬 𝗡𝗜𝗠𝗘𝗦𝗛𝗞𝗔 𝗠𝗜𝗛𝗜𝗥𝗔𝗡 / 𝗦𝗛𝗔𝗗𝗢𝗪 𝗙𝗫 / 𝗕𝗟𝗔𝗖𝗞𝗬 ✨🤖
 </p>
 
 <a href="https://github.com/Nimeshkamihiran/neno-xmd-bot/fork"><img title="NENO-XMD" src="https://img.shields.io/badge/FORK-NENO XMD-h?color=blue&style=for-the-badge&logo=stackshare"></a>
