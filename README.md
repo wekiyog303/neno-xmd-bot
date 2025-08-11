@@ -1,6 +1,6 @@
 # NENO XMD BOT (V2)
 <p align="center">
-<a href="https://github.com/Nimeshkamihiran"><img title="Author" src="https://files.catbox.moe/pf7ytb.jpg"></a>
+<a href="https://github.com/Nimeshkamihiran"><img title="Author" src="https://files.catbox.moe/z5lhou.jpg"></a>
 
 <p align="center">
 <a href="https://github.com/Nimeshkamihiran/followers"><img title="Followers" src="https://img.shields.io/github/followers/Nimeshkamihiran?color=blue&style=flat-square"></a>
@@ -69,6 +69,10 @@ Bring automation, entertainment, and unique features to your chats! ✨🤖
 
 ### 8. Deploy on Railway
 <a href='https://railway.app/new' target="_blank"><img alt='DEPLOY' src='https://img.shields.io/badge/RAILWAY-h?color=black&style=for-the-badge&logo=railway'/></a>
+
+<p align="center">
+<a href="https://github.com/Nimeshkamihiran"><img title="Author" src="https://files.catbox.moe/c1urvj.jpg"></a>
+
 
 ---
 
