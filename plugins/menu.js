@@ -7,7 +7,7 @@ cmd(
   {
     pattern: "menu",
     alias: ["getmenu"],
-    react: "📜",
+    react: "🎈",
     desc: "Get bot command list",
     category: "main",
     filename: __filename,
@@ -85,7 +85,7 @@ cmd(
         from,
         {
           image: {
-            url: "https://files.catbox.moe/9use7n.jpg",
+            url: "https://files.catbox.moe/3rhqht.jpg",
           },
           caption: madeMenu,
         },
