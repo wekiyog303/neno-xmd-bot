@@ -107,6 +107,13 @@ https://whatsapp.com/channel/0029Vb6BQQmFnSz7bmxefu40
 ✦ AI Engine         : 🤖 READY TO EXECUTE COMMANDS  
 ✦ Speed             : ⚡ INSTANT RESPONSE  
 
+◈ 𝐍𝐄𝐍𝐎 𝐗𝐌𝐃 ᴍᴀɪɴ ᴅᴇᴠ-:
+                 𝙽𝙸𝙼𝙴𝚂𝙷𝙺𝙰 𝙼𝙸𝙷𝙸𝚁𝙰𝙽🤍
+            𝐃𝐄𝐒𝐀𝐈𝐍𝐄𝐑-:
+                 𝚂𝙷𝙰𝙳𝙾𝚆 𝙵𝚇❤️
+            𝐇𝐄𝐋𝐏𝐄𝐑-:
+                 𝙱𝙻𝙰𝙲𝙺𝚈🩵
+
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 `;
 
@@ -123,6 +130,14 @@ https://whatsapp.com/channel/0029Vb6BQQmFnSz7bmxefu40
 ✦ Assistance Level : 🛡 ALWAYS ACTIVE  
 ✦ Mission          : ✨ MAKE YOUR TASKS EASY & POWERFUL  
 ✦ Motto            : 🚀 PERFORM • PROTECT • DOMINATE  
+
+
+◈ 𝐍𝐄𝐍𝐎 𝐗𝐌𝐃 ᴍᴀɪɴ ᴅᴇᴠ-:
+                 𝙽𝙸𝙼𝙴𝚂𝙷𝙺𝙰 𝙼𝙸𝙷𝙸𝚁𝙰𝙽🤍
+            𝐃𝐄𝐒𝐀𝐈𝐍𝐄𝐑-:
+                 𝚂𝙷𝙰𝙳𝙾𝚆 𝙵𝚇❤️
+            𝐇𝐄𝐋𝐏𝐄𝐑-:
+                 𝙱𝙻𝙰𝙲𝙺𝚈🩵
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 `;
