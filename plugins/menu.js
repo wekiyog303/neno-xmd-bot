@@ -48,6 +48,8 @@ cmd(
 ║ ⚡  *Bot*     : 𝗡𝗘𝗢𝗡 𝗫𝗠𝗗
 ║ 👤  *User*    : ${user}
 ║ 📱  *Owner*   : NIMESHKA MIHIRAN
+║ 💥  *desainer*: shadow fx
+║ 🎈  *helper*  : blacky
 ║ ⏳  *Uptime*  : ${uptime}
 ║ 💽  *RAM*     : ${usedRam} / ${totalRam}
 ║ 🔹  *Prefix*  : ${config.PREFIX}
@@ -58,8 +60,7 @@ cmd(
 ║    ✧ .alive
 ║    ✧ .menu
 ║    ✧ .ai <text>
-║    ✧ .system
-║    ✧ .dvp
+║    ✧ .dev
 ║
 ║ 📥  *DOWNLOAD COMMANDS*
 ║    ✧ .song <text>
@@ -68,9 +69,28 @@ cmd(
 ║    ✧ .tiktok <link>
 ║
 ║ 👑  *OWNER COMMANDS*
-║    ✧ .restart
-║    ✧ .update
+║    ✧ .block
+║    ✧ .join
+║    ✧ .add
+║    ✧ .kick
+║    ✧ .left
+║    ✧ .mute
+║    ✧.unmute
+║    ✧.add
+║    ✧.demote
+║    ✧.pomote
 ║
+║  🤣  *FUN COMMANDS*
+║    ✧ .joke
+║    ✧ .fact
+║    ✧ .flirt
+║    ✧ .truth
+║    ✧ .dare
+║    ✧ .pickupline
+║    ✧ .char
+║    ✧ .spam
+║    ✧ .rm
+║    
 ║ 🔁  *CONVERT COMMANDS*
 ║    ✧ .sticker <reply img>
 ║    ✧ .img <reply sticker>
