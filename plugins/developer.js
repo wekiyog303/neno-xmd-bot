@@ -7,13 +7,14 @@ cmd(
     alias: ["dev", "creator"],
     desc: "Show developer info with image and intro text",
     category: "info",
-    react: "👨‍💻",
+    react: "❤️‍🔥",
     filename: __filename,
     fromMe: false,
   },
   async (malvin, mek, m, { reply }) => {
     const developerInfo = {
       name: "Nimeshka Mihiran",
+      desainer: "shadow fx",
       helper: "Tharusha Adeeshana",
       number: "wa.me/94721584279",
       github: "https://github.com/nimeshkamihiran",
@@ -40,7 +41,9 @@ cmd(
 
 👤 *Name:* ${developerInfo.name} 
 
-🤍 *Name:* ${developerInfo.helper} 
+❤️ *desainer:* ${developerInfo.desainer} 
+
+🤍 *Helper:* ${developerInfo.helper} 
 
 📞 *Contact:* ${developerInfo.number}
 
