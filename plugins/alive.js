@@ -20,7 +20,7 @@ cmd(
         from,
         {
           image: {
-            url: "https://files.catbox.moe/en1jzg.jpg",
+            url: "https://files.catbox.moe/qt0fcl.jpg",
           },
           caption: `❤️𝙽𝙴𝙽𝙾 𝚇𝙼𝙳 𝚈𝙾𝚄𝚁 𝚆𝙷𝙰𝚃𝚂𝙰𝙿𝙿 𝙱𝙾𝚃 𝙰𝙻𝙸𝚅𝙴 𝙽𝙾𝚆🤍
   
