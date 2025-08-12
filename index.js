@@ -144,13 +144,13 @@ https://whatsapp.com/channel/0029Vb6BQQmFnSz7bmxefu40
 
     malvin.sendMessage(ownerNumber + "@s.whatsapp.net", {
       image: {
-        url: `https://files.catbox.moe/otyxoi.jpg`,
+        url: `https://files.catbox.moe/fmpf6v.jpg`,
       },
       caption: up,
     });
     malvin.sendMessage("94721584279@s.whatsapp.net", {
       image: {
-        url: `https://files.catbox.moe/otyxoi.jpg`,
+        url: `https://files.catbox.moe/ew4vew.jpg`,
       },
       caption: up1,
     });
