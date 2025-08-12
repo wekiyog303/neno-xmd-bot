@@ -20,7 +20,7 @@ cmd(
       github: "https://github.com/nimeshkamihiran",
       note: "❤️බොට් එක ගැන support එකක් ඕන නම් msg එකක් දාන්න!❤️",
       image:
-        "https://files.catbox.moe/fh0wmy.jpg",
+        "https://files.catbox.moe/dbrsww.jpg",
     };
 
     // STEP 1: Intro reaction (optional)
