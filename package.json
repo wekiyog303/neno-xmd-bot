@@ -32,7 +32,8 @@
   "@dark-yasiya/yt-dl.js": "1.0.5",
   "gtts": "^0.2.1",
   "axios": "^1.11.0",
-  "mumaker": "^2.0.0"
+  "mumaker": "^2.0.0",
+  "node-schedule": "^2.1.1"
   
    
  
