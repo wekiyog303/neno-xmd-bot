@@ -14,6 +14,9 @@ module.exports = {
   AUTO_REACT_STATUS: process.env.AUTO_REACT_STATUS || "true",
   MODE : process.env.MODE || "public", 
   AUTO_STATUS_LIKE: process.env.AUTO_STATUS_LIKE || "true", 
-  AUTO_RECORDING: convertToBool(process.env.AUTO_RECORDING || "true"), 
+  AUTO_RECORDING: convertToBool(process.env.AUTO_RECORDING || "false"), 
   ANTI_DELETE: convertToBool(process.env.ANTI_DELETE || "true"),
+  AUTO_VOICE: process.env.AUTO_VOICE || "true",
+    AUTO_STICKER: process.env.AUTO_STICKER || "true",
+    AUTO_REPLY: process.env.AUTO_REPLY || "true",
 };
