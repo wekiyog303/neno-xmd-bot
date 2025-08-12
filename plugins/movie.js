@@ -48,7 +48,7 @@ cmd({
 
         await conn.sendMessage(from, {
             image: { url: imageUrl },
-            caption: `${movieInfo}\n> CREATED BY SANA KHAN`
+            caption: `${movieInfo}\n> CREATED BY NENO OWNER`
         }, { quoted: mek });
     } catch (e) {
         console.error(e);
