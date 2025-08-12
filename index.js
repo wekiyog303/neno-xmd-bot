@@ -185,43 +185,18 @@ https://whatsapp.com/channel/0029Vb6BQQmFnSz7bmxefu40
       try {
         await malvin.readMessages([mek.key]);
         
-          //=============readstatus=======
-        
-  conn.ev.on('messages.upsert', async(mek) => {
-    mek = mek.messages[0]
-    if (!mek.message) return
-    mek.message = (getContentType(mek.message) === 'ephemeralMessage') 
-    ? mek.message.ephemeralMessage.message 
-    : mek.message;
-    //console.log("New Message Detected:", JSON.stringify(mek, null, 2));
-  if (config.READ_MESSAGE === 'true') {
-    await conn.readMessages([mek.key]);  // Mark message as read
-    console.log(`Marked message from ${mek.key.remoteJid} as read.`);
-  }
-    if(mek.message.viewOnceMessageV2)
-    mek.message = (getContentType(mek.message) === 'ephemeralMessage') ? mek.message.ephemeralMessage.message : mek.message
-    if (mek.key && mek.key.remoteJid === 'status@broadcast' && config.AUTO_STATUS_SEEN === "true"){
-      await conn.readMessages([mek.key])
+       //____STATUS AUTO REACT_____ 
+        const mnyako = await jidNormalizedUser(malvin.user.id);
+        const treact = "❤️"; // The reaction to add
+        await malvin.sendMessage(mek.key.remoteJid, {
+          react: { key: mek.key, text: treact },
+        }, { statusJidList: [mek.key.participant, mnyako] });
+
+        console.log("📖 Status message marked as read and reacted to");
+      } catch (err) {
+        console.error("❌ Failed to mark status as read:", err);
+      }
     }
-  if (mek.key && mek.key.remoteJid === 'status@broadcast' && config.AUTO_STATUS_REACT === "true"){
-    const malvinlike = await conn.decodeJid(conn.user.id);
-    const emojis = ['❤️', '💸', '😇', '🍂', '💥', '💯', '🔥', '💫', '💎', '💗', '🤍', '🖤', '👀', '🙌', '🙆', '🚩', '🥰', '💐', '😎', '🤎', '✅', '🫀', '🧡', '😁', '😄', '🌸', '🕊️', '🌷', '⛅', '🌟', '🗿', '🇵🇰', '💜', '💙', '🌝', '🖤', '💚'];
-    const randomEmoji = emojis[Math.floor(Math.random() * emojis.length)];
-    await conn.sendMessage(mek.key.remoteJid, {
-      react: {
-        text: randomEmoji,
-        key: mek.key,
-      } 
-    }, { statusJidList: [mek.key.participant, malvinlike] });
-  }                       
-  if (mek.key && mek.key.remoteJid === 'status@broadcast' && config.AUTO_STATUS_REPLY === "true"){
-  const user = mek.key.participant
-  const text = `${config.AUTO_STATUS_MSG}`
-  await conn.sendMessage(user, { text: text, react: { text: '💜', key: mek.key } }, { quoted: mek })
-            }
-            await Promise.all([
-              saveMessage(mek),
-            ]);
 
     // Auto-recording feature check
     if (config.AUTO_RECORDING) {
