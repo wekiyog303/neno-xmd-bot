@@ -61,6 +61,7 @@ cmd(
 ║    ✧ .menu
 ║    ✧ .ai <text>
 ║    ✧ .dev
+║    ► .about
 ║
 ║ 📥  *DOWNLOAD COMMANDS*
 ║    ✧ .song <text>
@@ -90,7 +91,18 @@ cmd(
 ║    ✧ .char
 ║    ✧ .spam
 ║    ✧ .rm
-║    
+║
+║  🩵 *ANIME COMMANDS*
+║    ◈ .loli
+║    ◈ .anime
+║    ◈ .animegirl
+║
+║  ❤️‍🔥 *OUTHER COMMNDS*
+║    ◈ .play2
+║    ◈ .drama
+║    ◈ .movie 
+║    ◈ .dog
+║
 ║ 🔁  *CONVERT COMMANDS*
 ║    ✧ .sticker <reply img>
 ║    ✧ .img <reply sticker>
