@@ -76,10 +76,15 @@ cmd(
 ║    ✧ .kick
 ║    ✧ .left
 ║    ✧ .mute
-║    ✧.unmute
-║    ✧.add
-║    ✧.demote
-║    ✧.pomote
+║    ✧ .unmute
+║    ✧ .add
+║    ✧ .demote
+║    ✧ .pomote
+║    ◈ .shutdown
+║    ◈ .gjid
+║    ◈ .jid
+║    ◈ .broadcast
+║    ◈ .clearchats
 ║
 ║  🤣  *FUN COMMANDS*
 ║    ✧ .joke
@@ -108,6 +113,10 @@ cmd(
 ║    ✧ .img <reply sticker>
 ║    ✧ .tr <lang> <text>
 ║    ✧ .tts <text>
+║
+║ ☠️  *STATUSE SAVE COMMAND*
+║     [reply save with statuse save text]
+║
 ╚════════════════════════════╝
 
 ⟦⚡⟧  *POWERED BY 𝗡𝗜𝗠𝗘𝗦𝗛𝗞𝗔 𝗠𝗜𝗛𝗜𝗥𝗔𝗡*  ⟦⚡⟧*
