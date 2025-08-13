@@ -4,21 +4,20 @@ module.exports = async (malvin, m) => {
   try {
     if (!config.AUTO_REACT) return;
 
-    const fromMe = m.key.fromMe;
-    if (fromMe || !m.message) return;
+    if (m.key.fromMe || !m.message) return;
 
-    // Define a list of random emojis
+    // Random emoji list
     const emojis = ["❤️", "🔥", "😂", "👍", "🥰", "💯", "😎", "👏", "🙌", "💖"];
 
-    // Pick one randomly
+    // Pick one emoji randomly
     const emoji = emojis[Math.floor(Math.random() * emojis.length)];
 
-    // Send the reaction
-    await malvin.sendMessage(m.key.remoteJid, {
+    // Send reaction
+    await malvin.sendMessage(m.chat || m.key.remoteJid, {
       react: {
         text: emoji,
-        key: m.key,
-      },
+        key: m.key
+      }
     });
 
   } catch (err) {
