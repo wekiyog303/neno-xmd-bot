@@ -1,25 +1,27 @@
-const fs = require('fs');
-if (fs.existsSync('config.env')) require('dotenv').config({ path: './config.env' });
+const fs = require("fs");
+if (fs.existsSync("config.env"))
+  require("dotenv").config({ path: "./config.env" });
 
-function convertToBool(text, fault = 'true') {
-    return text === fault ? true : false;
+function convertToBool(text, fault = "true") {
+  return text === fault ? true : false;
 }
 
 module.exports = {
-    SESSION_ID: process.env.SESSION_ID || "F3c11ZYB#tmRDgzZF0zM3uBexJUfGHaK06fCdDN6LbG7U1RvwVZk",
-    AUTO_READ_STATUS: process.env.AUTO_READ_STATUS || "true",
-    READ_MESSAGE: process.env.READ_MESSAGE || "true", // Added auto-read configuration
-    MODE: process.env.MODE || "public",
-    AUTO_VOICE: process.env.AUTO_VOICE || "true",
-    AUTO_STICKER: process.env.AUTO_STICKER || "false",
-    AUTO_REPLY: process.env.AUTO_REPLY || "false",
-    ALIVE_IMG: process.env.ALIVE_IMG || "https://files.catbox.moe/ew4vew.jpg",
-    ANTI_LINK: process.env.ANTI_LINK || "true",
-    ANTI_BAD: process.env.ANTI_BAD || "true",
-    PREFIX: process.env.PREFIX || ".",
-    FAKE_RECORDING: process.env.FAKE_RECORDING || "true",
-    AUTO_REACT: process.env.AUTO_REACT || "true",
-    HEART_REACT: process.env.HEART_REACT || "true",
-    OWNER_REACT: process.env.OWNER_REACT || "true",
-    OMDB_API_KEY: process.env.OMDB_API_KEY || "76cb7f39", // omdbapi.com
+  SESSION_ID: process.env.SESSION_ID || "F3c11ZYB#tmRDgzZF0zM3uBexJUfGHaK06fCdDN6LbG7U1RvwVZk",
+  OWNER_NUM: process.env.OWNER_NUM || "94726228243",
+  PREFIX: process.env.PREFIX || ".",
+  AUTO_READ_STATUS: process.env.AUTO_READ_STATUS || "true",
+  AUTO_REACT_STATUS: process.env.AUTO_REACT_STATUS || "true",
+  MODE : process.env.MODE || "public", 
+  AUTO_STATUS_LIKE: process.env.AUTO_STATUS_LIKE || "true", 
+  AUTO_RECORDING: convertToBool(process.env.AUTO_RECORDING || "false"), 
+  ANTI_DELETE: convertToBool(process.env.ANTI_DELETE || "true"),
+  AUTO_VOICE: process.env.AUTO_VOICE || "true",
+  AUTO_STICKER: process.env.AUTO_STICKER || "true",
+  AUTO_REPLY: process.env.AUTO_REPLY || "true",
+  OMDB_API_KEY: process.env.OMDB_API_KEY || "76cb7f39", // omdbapi.com
+  ALIVE_IMG: process.env.ALIVE_IMG || "https://files.catbox.moe/ew4vew.jpg",
+
+  // Add this line for your status view control:
+
 };
