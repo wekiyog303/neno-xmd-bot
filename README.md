@@ -75,7 +75,7 @@ Bring automation, entertainment, and unique features to your chats!
 <a href="https://github.com/Nimeshkamihiran"><img title="Author" src="https://files.catbox.moe/c1urvj.jpg"></a>
 
 ### 9.DEPLOY WORKFLOW
-<b><strong><summary align="center" style="color: Yello;">Deploy Malvin On Workflow</summary></strong></b>
+<b><strong><summary align="center" style="color: Yello;">Deploy NENO XMD On Workflow</summary></strong></b>
 <p style="text-align: center; font-size: 1.2em;">
  
 <h8>Copy the workflow codes and then fork the repo edit config add session id then save and now click on repo action tag then click on start new workflow then paste workflow codes rename main.yml to deploy.yml and save the file</h8>
