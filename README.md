@@ -35,7 +35,7 @@ Bring automation, entertainment, and unique features to your chats!
 
 ## Deployment Methods
 
-1. **Get [`SESSION ID`](https://malvinxd-pairsession.onrender.com/) by Pair Code or Scanning QR code**  
+1. **Get [`SESSION ID`](https://neno-xmd-pair-zqa6.onrender.com) by Pair Code or Scanning QR code**  
    WhatsApp → Three dots → Linked Devices
 
 
