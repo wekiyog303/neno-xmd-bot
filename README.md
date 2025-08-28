@@ -35,7 +35,7 @@ Bring automation, entertainment, and unique features to your chats!
 
 ## Deployment Methods
 
-1. **Get [`SESSION ID`](https://pair-code-2-k0ge.onrender.com) by Pair Code or Scanning QR code**  
+1. **Get [`SESSION ID`]([https://pair-code-2-k0ge.onrender.com](https://neno-pair-k47s.onrender.com) by Pair Code or Scanning QR code**  
    WhatsApp → Three dots → Linked Devices
 
 
