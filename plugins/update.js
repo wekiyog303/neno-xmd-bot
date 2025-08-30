@@ -1,5 +1,5 @@
 const config = require('../config');
-let fs = require('fs');
+const fs = require('fs');
 const { exec } = require('child_process');
 const { cmd } = require('../command');
 
@@ -12,34 +12,33 @@ cmd({
     filename: __filename
 }, async (conn, mek, m, { from, reply }) => {
     try {
-        const repoUrl = 'https://github.com/Nimeshkamihiran/neno-xmd-bot.git'; // لینک مخزن گیت‌هاب
-        const targetFolder = 'plugins'; // پوشه‌ای که باید به‌روز شود
+        const repoUrl = 'https://github.com/Nimeshkamihiran/neno-xmd-bot.git'; // New repo
+        const targetFolder = 'plugins';
 
-        // بررسی وجود پوشه هدف
-        if (!fs.existsSync(targetFolder)) {
-            fs.mkdirSync(targetFolder); // ساخت پوشه در صورت عدم وجود
+        // Delete existing folder if exists
+        if (fs.existsSync(targetFolder)) {
+            fs.rmSync(targetFolder, { recursive: true, force: true });
         }
 
-        // تعیین دستور مناسب گیت
-        const gitCommand = fs.existsSync(`${targetFolder}/.git`)
-            ? `git -C ${targetFolder} pull`
-            : `git clone ${repoUrl} ${targetFolder}`;
+        // Clone repo
+        const gitCommand = `git clone ${repoUrl} ${targetFolder}`;
 
-        // اجرای دستور گیت
-        await new Promise((resolve, reject) => {
+        const result = await new Promise((resolve, reject) => {
             exec(gitCommand, (err, stdout, stderr) => {
-                if (err) {
-                    reject(`Git command failed: ${stderr}`);
-                } else {
-                    resolve(stdout);
-                }
+                if (err) return reject(stderr || err.message || err);
+                resolve(stdout);
             });
         });
 
-        // ارسال پیام موفقیت
-        await conn.sendMessage(from, { text: '*✅ Update completed successfully!*' }, { quoted: mek });
+        let messageText = `╭─═━⌬━═─⊹⊱✦⊰⊹─═━⌬━═─\n` +
+                          `┊ ⚡ *BOT UPDATE*\n` +
+                          `┊ ✅ Update completed *successfully!* ✨\n` +
+                          `╰─═━⌬━═─⊹⊱✦⊰⊹─═━⌬━═─`;
+
+        await conn.sendMessage(from, { text: messageText }, { quoted: mek });
+
     } catch (error) {
         console.error(error);
-        reply(`*Error during update:* ${error.message}`);
+        reply(`*❌ Error during update:* ${error}`);
     }
 });
