@@ -2,7 +2,7 @@ const { cmd } = require("../command");
 const axios = require("axios");
 
 // Never expose your real API key in production code!
-const GEMINI_API_KEY = "AIzaSyAkryCMMe0mh9TyyUUOBgzLhm2OXdomrEU";
+const GEMINI_API_KEY = "AIzaSyB19i1M8R6Ouwy1AP9ASsfLep_DPUAcOP0";
 
 cmd(
   {
