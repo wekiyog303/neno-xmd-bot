@@ -17,6 +17,7 @@ module.exports = {
   AUTO_RECORDING: convertToBool(process.env.AUTO_RECORDING || "false"), 
   ANTI_DELETE: convertToBool(process.env.ANTI_DELETE || "true"),
   AUTO_VOICE: process.env.AUTO_VOICE || "true",
+  AUTO_CHAT_GF: process.env.AUTO_CHAT_GF || "true",
   AUTO_STICKER: process.env.AUTO_STICKER || "true",
   AUTO_REPLY: process.env.AUTO_REPLY || "true",
   OMDB_API_KEY: process.env.OMDB_API_KEY || "76cb7f39", // omdbapi.com
