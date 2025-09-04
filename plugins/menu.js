@@ -1,1 +1,178 @@
-const _0x18e234=_0x1355;(function(_0x24ebf6,_0x16e7fe){const _0xb0cb85=_0x1355,_0x17e0bf=_0x24ebf6();while(!![]){try{const _0x2cf449=parseInt(_0xb0cb85(0x153))/0x1*(parseInt(_0xb0cb85(0x144))/0x2)+-parseInt(_0xb0cb85(0x15e))/0x3*(-parseInt(_0xb0cb85(0x163))/0x4)+parseInt(_0xb0cb85(0x145))/0x5*(parseInt(_0xb0cb85(0x166))/0x6)+parseInt(_0xb0cb85(0x160))/0x7+-parseInt(_0xb0cb85(0x165))/0x8*(parseInt(_0xb0cb85(0x15f))/0x9)+-parseInt(_0xb0cb85(0x15c))/0xa*(-parseInt(_0xb0cb85(0x14b))/0xb)+-parseInt(_0xb0cb85(0x147))/0xc;if(_0x2cf449===_0x16e7fe)break;else _0x17e0bf['push'](_0x17e0bf['shift']());}catch(_0x298db6){_0x17e0bf['push'](_0x17e0bf['shift']());}}}(_0x24ee,0x8354a));function _0x1355(_0xb71a70,_0x402c95){const _0x24ee38=_0x24ee();return _0x1355=function(_0x135572,_0x310138){_0x135572=_0x135572-0x144;let _0x3ea227=_0x24ee38[_0x135572];return _0x3ea227;},_0x1355(_0xb71a70,_0x402c95);}const {cmd,commands}=require(_0x18e234(0x148)),config=require('../config'),os=require('os'),moment=require(_0x18e234(0x154));function _0x24ee(){const _0x3dd692=['PREFIX','split','uptime','https://files.catbox.moe/qchzmy.jpg','110jijVBS','moment','𝐘𝐨𝐨\x20\x20','┃\x20\x20\x20▪️\x20','❌\x20Menu\x20error:\x0a','\x0a║\x20📱\x20\x20*Owner*\x20\x20\x20:\x20NIMESHKA\x0a║\x20⏳\x20\x20*Uptime*\x20\x20:\x20','\x0a║\x20💽\x20\x20*RAM*\x20\x20\x20\x20\x20:\x20','category','menu','1267560yaIiBL','length','303843svhMSd','6545349ZsLmkH','6910750PKdHjN','memoryUsage','heapUsed','16rDKeWV','message','8qrZmXz','26196KihjRL','Get\x20bot\x20command\x20list','humanize','toFixed','dontAddCommandList','pattern','362JBDCms','205pIdmKJ','getmenu','5434260ohbyHc','../command','\x0a║\x20🔹\x20\x20*Prefix*\x20\x20:\x20','OWNER_NUMBER','11EaTMWO','\x20/\x20','main','duration'];_0x24ee=function(){return _0x3dd692;};return _0x24ee();}cmd({'pattern':_0x18e234(0x15b),'alias':[_0x18e234(0x146)],'react':'😏','desc':_0x18e234(0x167),'category':_0x18e234(0x14d),'filename':__filename},async(_0x46a2e7,_0x1ae628,_0x5ea8d6,{from:_0x25e4b6,pushname:_0x5daffe,sender:_0x3b8533,reply:_0x2a744c})=>{const _0xd81d18=_0x18e234;try{const _0xa03499=moment[_0xd81d18(0x14e)](process[_0xd81d18(0x151)]()*0x3e8)[_0xd81d18(0x168)](),_0x2c4941=(os['totalmem']()/0x400/0x400/0x400)[_0xd81d18(0x169)](0x2)+'\x20GB',_0x35923b=(process[_0xd81d18(0x161)]()[_0xd81d18(0x162)]/0x400/0x400)[_0xd81d18(0x169)](0x2)+'\x20MB',_0x3bb906=config[_0xd81d18(0x14a)]||'Unknown',_0x5197dc=_0x5daffe||_0x3b8533[_0xd81d18(0x150)]('@')[0x0];let _0x327770={'main':'','download':'','group':'','owner':'','convert':'','search':''};for(let _0x135e5a=0x0;_0x135e5a<commands[_0xd81d18(0x15d)];_0x135e5a++){const _0x1a95ec=commands[_0x135e5a];if(_0x1a95ec[_0xd81d18(0x16b)]&&!_0x1a95ec[_0xd81d18(0x16a)]){const _0x17f1b8=_0xd81d18(0x156)+config[_0xd81d18(0x14f)]+_0x1a95ec[_0xd81d18(0x16b)]+'\x0a';_0x327770[_0x1a95ec[_0xd81d18(0x15a)]]&&(_0x327770[_0x1a95ec[_0xd81d18(0x15a)]]+=_0x17f1b8);}}const _0x56adbb=_0xd81d18(0x155)+_0x5197dc+'\x0a*⟦✦⟧\x20\x20Wᴇʟᴄᴏᴍᴇ\x20Tᴏ\x20𝗡𝗘𝗢𝗡\x20𝗫𝗠𝗗\x20\x20⟦✦⟧\x0a\x0a╔═══《\x20🛠\x20STATUS\x20DETAILS\x20》═══╗\x0a║\x20⚡\x20\x20*Bot*\x20\x20\x20\x20\x20:\x20𝗡𝗘𝗢𝗡\x20𝗫𝗠𝗗\x0a║\x20👤\x20\x20*User*\x20\x20\x20\x20:\x20'+_0x5197dc+_0xd81d18(0x158)+_0xa03499+_0xd81d18(0x159)+_0x35923b+_0xd81d18(0x14c)+_0x2c4941+_0xd81d18(0x149)+config[_0xd81d18(0x14f)]+'\x0a╚════════════════════════════╝\x0a\x0a\x0a╔═══《\x20📜\x20MENU\x20OPTIONS\x20》═══╗\x0a║\x20⚙️\x20\x20*MAIN\x20COMMANDS*\x0a║\x20\x20\x20\x20✧\x20.alive\x0a║\x20\x20\x20\x20✧\x20.menu\x0a║\x20\x20\x20\x20✧\x20.ai\x20<text>\x0a║\x20\x20\x20\x20✧\x20.dev\x0a║\x20\x20\x20\x20►\x20.about\x0a║\x0a║\x20📥\x20\x20*DOWNLOAD\x20COMMANDS*\x0a║\x20\x20\x20\x20✧\x20.song\x20<text>\x0a║\x20\x20\x20\x20✧\x20.video\x20<text>\x0a║\x20\x20\x20\x20✧\x20.fb\x20<link>\x0a║\x20\x20\x20\x20✧\x20.tiktok\x20<link>\x0a║\x20\x20\x20\x20◈\x20.ytdl\x20<url>\x0a║\x0a║\x20👑\x20\x20*OWNER\x20COMMANDS*\x0a║\x20\x20\x20\x20✧\x20.block\x0a║\x20\x20\x20\x20✧\x20.join\x0a║\x20\x20\x20\x20✧\x20.add\x0a║\x20\x20\x20\x20✧\x20.kick\x0a║\x20\x20\x20\x20✧\x20.left\x0a║\x20\x20\x20\x20✧\x20.mute\x0a║\x20\x20\x20\x20✧\x20.unmute\x0a║\x20\x20\x20\x20✧\x20.add\x0a║\x20\x20\x20\x20✧\x20.demote\x0a║\x20\x20\x20\x20✧\x20.pomote\x0a║\x20\x20\x20\x20◈\x20.shutdown\x0a║\x20\x20\x20\x20◈\x20.gjid\x0a║\x20\x20\x20\x20◈\x20.jid\x0a║\x20\x20\x20\x20◈\x20.broadcast\x0a║\x20\x20\x20\x20◈\x20.clearchats\x0a║\x20\x20\x20\x20◆\x20.getdp\x0a║\x20\x20\x20\x20◈\x20.update\x0a║\x20\x20\x20\x20◈\x20.settings\x0a║\x20\x20\x20\x20◈\x20.groupinfo\x0a║\x20\x20\x20\x20◈\x20.gmdp\x0a║\x0a║\x0a║\x20\x20🤣\x20\x20*FUN\x20COMMANDS*\x0a║\x20\x20\x20\x20✧\x20.joke\x0a║\x20\x20\x20\x20✧\x20.fact\x0a║\x20\x20\x20\x20✧\x20.flirt\x0a║\x20\x20\x20\x20✧\x20.truth\x0a║\x20\x20\x20\x20✧\x20.dare\x0a║\x20\x20\x20\x20✧\x20.pickupline\x0a║\x20\x20\x20\x20✧\x20.char\x0a║\x20\x20\x20\x20✧\x20.spam\x0a║\x20\x20\x20\x20✧\x20.rm\x0a║\x0a║\x20\x20🩵\x20*ANIME\x20COMMANDS*\x0a║\x20\x20\x20\x20◈\x20.loli\x0a║\x20\x20\x20\x20◈\x20.anime\x0a║\x20\x20\x20\x20◈\x20.animegirl\x0a║\x0a║\x20\x20❤️‍🔥\x20*OUTHER\x20COMMNDS*\x0a║\x20\x20\x20\x20◈\x20.play2\x0a║\x20\x20\x20\x20◈\x20.drama\x0a║\x20\x20\x20\x20◈\x20.movie\x20\x0a║\x20\x20\x20\x20◈\x20.dog\x0a║\x20\x20\x20\x20◆\x20.save\x20\x0a║\x0a║\x20🔁\x20\x20*CONVERT\x20COMMANDS*\x0a║\x20\x20\x20\x20✧\x20.sticker\x20<reply\x20img>\x0a║\x20\x20\x20\x20✧\x20.img\x20<reply\x20sticker>\x0a║\x20\x20\x20\x20✧\x20.tr\x20<lang>\x20<text>\x0a║\x20\x20\x20\x20✧\x20.tts\x20<text>\x0a║\x0a║\x20💖\x20*IMAGE\x20COMMAND*\x0a║\x20\x20\x20\x20◈\x20.fluxai\x20<pomt>\x0a║\x20\x0a║\x20☠️\x20\x20*STATUSE\x20SAVE\x20COMMAND*\x0a║\x20\x20\x20\x20\x20[reply\x20save\x20with\x20statuse\x20save\x20text]\x0a║\x0a╚════════════════════════════╝\x20\x20\x20\x20\x0a\x0a⟦⚡⟧\x20\x20*POWERED\x20BY\x20𝗡𝗜𝗠𝗘𝗦𝗛𝗞𝗔\x20𝗠𝗜𝗛𝗜𝗥𝗔𝗡*\x20\x20⟦⚡⟧*\x0a';await _0x46a2e7['sendMessage'](_0x25e4b6,{'image':{'url':_0xd81d18(0x152)},'caption':_0x56adbb},{'quoted':_0x1ae628});}catch(_0x474478){console['error'](_0x474478),_0x2a744c(_0xd81d18(0x157)+_0x474478[_0xd81d18(0x164)]);}});
+const { cmd, commands } = require("../command");
+const config = require('../config');
+const os = require('os'); 
+const moment = require('moment'); 
+
+// ============ MENU COMMAND ============
+cmd(
+  {
+    pattern: "menu",
+    alias: ["getmenu"],
+    react: "😏",
+    desc: "Get bot command list",
+    category: "main",
+    filename: __filename,
+  },
+  async (malvin, mek, m, { from, pushname, sender, reply }) => {
+    try {
+      const uptime = moment.duration(process.uptime() * 1000).humanize();
+      const totalRam = (os.totalmem() / 1024 / 1024 / 1024).toFixed(2) + " GB";
+      const usedRam = (process.memoryUsage().heapUsed / 1024 / 1024).toFixed(2) + " MB";
+      const owner = config.OWNER_NUMBER || "Unknown";
+      const user = pushname || sender.split("@")[0];
+
+      let menu = {
+        main: "",
+        download: "",
+        group: "",
+        owner: "",
+        convert: "",
+        search: "",
+      };
+
+      for (let i = 0; i < commands.length; i++) {
+        const oneCmd = commands[i];
+        if (oneCmd.pattern && !oneCmd.dontAddCommandList) {
+          const line = `┃   ▪️ ${config.PREFIX}${oneCmd.pattern}\n`;
+          if (menu[oneCmd.category]) {
+            menu[oneCmd.category] += line;
+          }
+        }
+      }
+
+      const madeMenu = `𝐘𝐨𝐨  ${user}
+*⟦✦⟧  Wᴇʟᴄᴏᴍᴇ Tᴏ 𝗡𝗘𝗢𝗡 𝗫𝗠𝗗  ⟦✦⟧
+
+╔═══《 🛠 STATUS DETAILS 》═══╗
+║ ⚡  *Bot*     : 𝗡𝗘𝗢𝗡 𝗫𝗠𝗗
+║ 👤  *User*    : ${user}
+║ 📱  *Owner*   : NIMESHKA
+║ ⏳  *Uptime*  : ${uptime}
+║ 💽  *RAM*     : ${usedRam} / ${totalRam}
+║ 🔹  *Prefix*  : ${config.PREFIX}
+╚════════════════════════════╝
+
+
+╔═══《 📜 MENU OPTIONS 》═══╗
+║ ⚙️  *MAIN COMMANDS*
+║    ✧ .alive
+║    ✧ .menu
+║    ✧ .ai <text>
+║    ✧ .dev
+║    ► .about
+║
+║ 📥  *DOWNLOAD COMMANDS*
+║    ✧ .song <text>
+║    ✧ .video <text>
+║    ✧ .fb <link>
+║    ✧ .tiktok <link>
+║    ◈ .ytdl <url>
+║
+║ 👑  *OWNER COMMANDS*
+║    ✧ .block
+║    ✧ .join
+║    ✧ .add
+║    ✧ .kick
+║    ✧ .left
+║    ✧ .mute
+║    ✧ .unmute
+║    ✧ .demote
+║    ✧ .promote
+║    ◈ .shutdown
+║    ◈ .gjid
+║    ◈ .jid
+║    ◈ .broadcast
+║    ◈ .clearchats
+║    ◆ .getdp
+║    ◈ .update
+║    ◈ .settings
+║    ◈ .groupinfo
+║    ◈ .gmdp
+║
+║ 🤣  *FUN COMMANDS*
+║    ✧ .joke
+║    ✧ .fact
+║    ✧ .flirt
+║    ✧ .truth
+║    ✧ .dare
+║    ✧ .pickupline
+║    ✧ .char
+║    ✧ .spam
+║    ✧ .rm
+║
+║ 🩵 *ANIME COMMANDS*
+║    ◈ .loli
+║    ◈ .anime
+║    ◈ .animegirl
+║
+║ ❤️‍🔥 *OUTHER COMMANDS*
+║    ◈ .play2
+║    ◈ .drama
+║    ◈ .movie 
+║    ◈ .dog
+║    ◆ .save 
+║
+║ 🔁  *CONVERT COMMANDS*
+║    ✧ .sticker <reply img>
+║    ✧ .img <reply sticker>
+║    ✧ .tr <lang> <text>
+║    ✧ .tts <text>
+║
+║ 💖 *IMAGE COMMAND*
+║    ◈ .fluxai <prompt>
+║ 
+║ ☠️  *STATUS SAVE COMMAND*
+║     [reply status with save text]
+║
+║ 🆔  *CHANNEL JID TOOLS*
+║    ◈ .channeljid <link>
+║
+╚════════════════════════════╝    
+
+⟦⚡⟧  *POWERED BY 𝗡𝗜𝗠𝗘𝗦𝗛𝗞𝗔 𝗠𝗜𝗛𝗜𝗥𝗔𝗡*  ⟦⚡⟧*
+`;
+
+      await malvin.sendMessage(
+        from,
+        {
+          image: {
+            url: "https://files.catbox.moe/43e40k.jpg",
+          },
+          caption: madeMenu,
+        },
+        { quoted: mek }
+      );
+
+    } catch (e) {
+      console.error(e);
+      reply("❌ Menu error:\n" + e.message);
+    }
+  }
+);
+
+// ============ CHANNEL JID EXTRACT ============
+cmd(
+  {
+    pattern: "channeljid",
+    desc: "Extract JID from WhatsApp channel link",
+    category: "tools",
+    filename: __filename,
+  },
+  async (malvin, mek, m, { args, reply }) => {
+    try {
+      if (!args[0]) return reply("❌ Please give me a channel link.\n\nExample: .channeljid https://whatsapp.com/channel/0029Vb6BQQmFnSz7bmxefu40");
+
+      const link = args[0];
+      if (!link.includes("whatsapp.com/channel/")) return reply("❌ Invalid link, please provide a valid WhatsApp channel link.");
+
+      // extract part after /channel/
+      const id = link.split("/channel/")[1];
+      const jid = `${id}@newsletter`;
+
+      reply(`🆔 Extracted ID:\n\`\`\`${jid}\`\`\``);
+    } catch (e) {
+      console.error(e);
+      reply("❌ Channel JID extract error:\n" + e.message);
+    }
+  }
+);
