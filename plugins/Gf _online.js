@@ -2,7 +2,7 @@ const axios = require("axios");
 const config = require("../config");
 
 // Gemini API key
-const GEMINI_API_KEY = "AIzaSyBVhfg7HC20eR8wBxcM7uvMzh0X0Mvtzwk";
+const GEMINI_API_KEY = "AIzaSyCac8QLbUN0KbcXYkTmT3ume3W5MC1yAoc";
 
 // Chat memory + mood per user
 const chatMemory = {};
