@@ -1,9 +1,9 @@
 {
   "bot-name": "NENO XMD",
   "description": "BY NIMESHKA MIHIRAN",
-  "logo": "https://files.catbox.moe/otyxoi.jpg",
+  "logo": "https://files.catbox.moe/z5lhou.jpg",
   "keywords": ["bot"],
-  "documentation-link": "",
+  "documentation-link": "https://neno-pair-k47s.onrender.com",
   "owner-verification": "mihirangamihiranga223@gmail.com",
   "env": {
     "SESSION_ID": {
