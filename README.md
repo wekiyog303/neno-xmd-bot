@@ -116,15 +116,19 @@ jobs:
 
     - name: Start application
       run: npm start
-```
-</details> 
-
-
-<p align="center">
+```<p align="center">
   <img src="https://files.catbox.moe/0mf3hg.webp" alt="Owner" width="250" />
 </p>
 
+`````
+
 # 👑 Bot Owner ✨
+
+<p align="center">
+  💫 Meet the mastermind behind Neno XMD WhatsApp Bot! 💫  
+  This bot is powered, maintained, and updated by **Nimeshka Mihiran**.  
+  Every feature, command, and fun trick you enjoy is crafted with care!  
+</p>
 
 | Detail | Info |
 |--------|------|
@@ -132,9 +136,15 @@ jobs:
 | Contact | 📞 +94 760771665 |
 | GitHub | 💻 [NimeshkaMihiran](https://github.com/Nimeshkamihiran) |
 | Role | 🛠 Owner & Developer |
-| Status | 🌟 Online & Active 🌟  
+| Status | 🌟 Online & Active 🌟 |
 
 <p align="center">
-  <img src="https://media.giphy.com/media/l0MYt5jPR6QX5pnqM/giphy.gif" alt="Sparkle" width="100" />  
-  ✨ Made with ❤️ by <b>Nimeshka Mihiran</b> ✨
+  🌟 Fun, Friendly & Always Upgrading 🌟  
+  <img src="https://media.giphy.com/media/l0MYt5jPR6QX5pnqM/giphy.gif" alt="Sparkle" width="80" />
+  <img src="https://media.giphy.com/media/3o7aCTfyhYawdOXcFW/giphy.gif" alt="Stars" width="80" />  
+  Made with ❤️ and lots of coffee ☕ by <b>Nimeshka Mihiran</b>
 </p>
+
+<p align="center">
+  ✨ Keep shining and exploring new features with Neno XMD! ✨
+</p></p>
