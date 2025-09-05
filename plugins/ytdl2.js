@@ -1,46 +1,40 @@
-// plugins/ytvideo.js
+// plugins/dvideo.js
 const { cmd } = require("../command");
 const yts = require("yt-search");
 const axios = require("axios");
 
 cmd(
   {
-    pattern: "ytdl",
-    react: "🎥",
-    desc: "Download YouTube Video",
+    pattern: "dvideo",
+    react: "♻️",
+    desc: "Download YouTube Video via link",
     category: "download",
     filename: __filename,
   },
   async (malvin, mek, m, { from, args, reply }) => {
     try {
-      const q = args.join(" ");
-      if (!q) return reply("*Provide a name or a YouTube link.* 🎥❤️");
+      const link = args[0];
+      if (!link) return reply("*Please provide a YouTube video link.* 🎥❤️");
 
-      // 1) Find the URL
-      let url = q;
+      // 1) Validate URL
+      let url;
       try {
-        url = new URL(q).toString();
+        url = new URL(link).toString();
       } catch {
-        const s = await yts(q);
-        if (!s.videos.length) return reply("❌ No videos found!");
-        url = s.videos[0].url;
+        return reply("❌ Invalid YouTube link!");
       }
 
-      // 2) Send metadata + thumbnail
-      const info = (await yts(url)).videos[0];
+      // 2) Fetch video info
+      const searchResult = await yts(url);
+      if (!searchResult.videos.length) return reply("❌ No video found for this link!");
+      const info = searchResult.videos[0];
+
       const desc = `
 🧩 *𝗡𝗘𝗡𝗢 𝗫𝗠𝗗 DOWNLOADER* 🧩
 📌 *Title:* ${info.title}
-
-📝 *Description:* ${info.description}
-
 ⏱️ *Uploaded:* ${info.timestamp} (${info.ago} ago)
-
 👀 *Views:* ${info.views}
-
-🔗 *Download URL:*
-${info.url}
-
+🔗 *Video URL:* ${info.url}
 ━━━━━━━━━━━━━━━━━━
 *ᴺᴵᴹᴱˢᴴᴷᴬ ᴹᴵᴴᴵᴿᴬᴺ🪀*
       `.trim();
@@ -51,9 +45,8 @@ ${info.url}
         { quoted: mek }
       );
 
-      // 3) Video download helper
+      // 3) Download video from API
       const downloadVideo = async (videoUrl, quality = "720") => {
-        // <-- wrap the URL in backticks so ${} works correctly
         const apiUrl = `https://p.oceansaver.in/ajax/download.php?format=${quality}&url=${encodeURIComponent(
           videoUrl
         )}&api=dfcb6d76f2f6a9894gjkege8a4ab232222`;
@@ -62,22 +55,20 @@ ${info.url}
         if (!res.data.success) throw new Error("Failed to fetch video details.");
 
         const { id, title } = res.data;
-        // <-- remove the stray semicolon from the URL
         const progressUrl = `https://p.oceansaver.in/ajax/progress.php?id=${id}`;
 
-        // poll until ready
+        // Poll until download is ready
         while (true) {
           const prog = (await axios.get(progressUrl)).data;
           if (prog.success && prog.progress === 1000) {
             const vid = await axios.get(prog.download_url, { responseType: "arraybuffer" });
             return { buffer: vid.data, title };
           }
-          // wait 5s and poll again
           await new Promise((r) => setTimeout(r, 5000));
         }
       };
 
-      // 4) Download + send
+      // 4) Download & send video
       const { buffer, title } = await downloadVideo(url, "720");
       await malvin.sendMessage(
         from,
@@ -89,7 +80,7 @@ ${info.url}
         { quoted: mek }
       );
 
-      reply("*Thanks for using my bot!* 🎥");
+      reply("*Thanks for using the bot!* 🎥");
     } catch (e) {
       console.error(e);
       reply(`❌ Error: ${e.message}`);
