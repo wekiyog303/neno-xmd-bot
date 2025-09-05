@@ -116,9 +116,6 @@ jobs:
 
     - name: Start application
       run: npm start
-```<p align="center">
-  <img src="https://files.catbox.moe/0mf3hg.webp" alt="Owner" width="250" />
-</p>
 
 `````
 
