@@ -122,6 +122,10 @@ jobs:
 
 `````
 
+<p align="center">
+  <img src="https://files.catbox.moe/0mf3hg.webp" alt="Owner" width="250" />
+</p>
+
 # 👑 Bot Owner ✨
 
 <p align="center">
@@ -147,4 +151,4 @@ jobs:
 
 <p align="center">
   ✨ Keep shining and exploring new features with Neno XMD! ✨
-</p></p>
+</p>
