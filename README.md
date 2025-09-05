@@ -120,20 +120,21 @@ jobs:
 </details> 
 
 
+<p align="center">
+  <img src="https://files.catbox.moe/0mf3hg.webp" alt="Owner" width="250" />
+</p>
 
----
+# 👑 Bot Owner ✨
 
-## VPS / PC Installation
+| Detail | Info |
+|--------|------|
+| Name | **Nimeshka Mihiran** ✨ |
+| Contact | 📞 +94 760771665 |
+| GitHub | 💻 [NimeshkaMihiran](https://github.com/Nimeshkamihiran) |
+| Role | 🛠 Owner & Developer |
+| Status | 🌟 Online & Active 🌟  
 
-```bash
-sudo apt -y update && sudo apt -y upgrade 
-sudo apt -y install git ffmpeg curl imagemagick
-sudo apt -y remove nodejs
-curl -fsSl https://deb.nodesource.com/setup_lts.x | sudo bash - && sudo apt -y install nodejs
-curl -sS https://dl.yarnpkg.com/debian/pubkey.gpg | sudo apt-key add -
-echo "deb https://dl.yarnpkg.com/debian/ stable main" | sudo tee /etc/apt/sources.list.d/yarn.list
-sudo apt -y update && sudo apt -y install yarn
-sudo yarn global add pm2
-git clone https://github.com/Nimeshkamihiran/neno-xmd-bot
-cd neno-xmd-bot
-yarn install --network-concurrency 1 && npm install
+<p align="center">
+  <img src="https://media.giphy.com/media/l0MYt5jPR6QX5pnqM/giphy.gif" alt="Sparkle" width="100" />  
+  ✨ Made with ❤️ by <b>Nimeshka Mihiran</b> ✨
+</p>
